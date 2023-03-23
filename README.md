@@ -18,16 +18,15 @@ Note : To SSH to control plane nodes use gcloud or browser shell using on one of
 
 e.g: gcloud compute ssh INSTANCE-NAME  --zone europe-west2-c --tunnel-through-iap
 
+  
 ## Task 2
 
-SA account created with Data Editor role and user can impersonate the service account for bq Data Editor role.
-to Impersonate service accoint the ACCESS TOKEN can be set using below command.
+1.SA account created with Data Editor role and user can impersonate the service account for bq Data Editor role.
+
+To Impersonate service account by principal the ACCESS TOKEN can be set using below command.
 export GOOGLE_OAUTH_ACCESS_TOKEN=$(gcloud auth print-access-token --impersonate-service-account=bq-editor-sa@<Project ID>.iam.gserviceaccount.com
 )
-Module create as explained on Task2
+2.Module create as explained on Task2
 
 
 
-
-
-Note: For Task1, Due to quota issues could not run  check both the pools, as it takes more than 10 mins to create cluster, delete default pool and create two new pools , I can confirm the script is working. Spent nearly 4 hours developing and running the script took more time run due to quota issues.
