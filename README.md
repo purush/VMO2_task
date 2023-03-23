@@ -21,12 +21,13 @@ e.g: gcloud compute ssh INSTANCE-NAME  --zone europe-west2-c --tunnel-through-ia
   
 ## Task 2
 
-1.SA account created with Data Editor role and user can impersonate the service account for bq Data Editor role.
+1. SA account created with Data Editor role and user can impersonate the service account for to utlise bq Data Editor role.
 
 To Impersonate service account by principal the ACCESS TOKEN can be set using below command.
 export GOOGLE_OAUTH_ACCESS_TOKEN=$(gcloud auth print-access-token --impersonate-service-account=bq-editor-sa@<Project ID>.iam.gserviceaccount.com
 )
-2.Module create as explained on Task2
+
+2. Module create as explained on Task2
 
 
 
