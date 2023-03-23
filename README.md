@@ -27,7 +27,7 @@ To Impersonate service account by principal the ACCESS TOKEN can be set using be
 export GOOGLE_OAUTH_ACCESS_TOKEN=$(gcloud auth print-access-token --impersonate-service-account=bq-editor-sa@<Project ID>.iam.gserviceaccount.com
 )
 
-2. Module create as explained on Task2
+2. Module created as explained on Task2.
 
 
 
