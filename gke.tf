@@ -59,7 +59,7 @@ resource "google_container_node_pool" "pool1_autoscale_preemptible_nodes" {
 resource "google_container_node_pool" "pool2_nodes" {
   name       = "pool2-no-scaling"
   cluster    = google_container_cluster.primary.id
-  node_count = 3
+  node_count = 1
   node_config {
     preemptible  = false
     machine_type = "e2-medium"

@@ -23,8 +23,8 @@ variable "my_gke_cluster" {
 }
 
 variable "subnet_cidr_block" {
-  default     = "10.0.1.0/24"
-  description = "subnet CIDR block /24 "
+  default     = "10.1.0.0/16"
+  description = "subnet CIDR block /16 "
 }
 
 variable "master_cidr_block" {
@@ -33,11 +33,11 @@ variable "master_cidr_block" {
 }
 
 variable "service_cidr_block" {
-  default     = "10.101.0.0/16"
+  default     = "172.31.0.0/16"
   description = "kubernetes services range "
 }
 
 variable "pod_cidr_block" {
-  default     = "10.102.0.0/16"
+  default     = "172.32.0.0/16"
   description = "pods ranges "
 }
